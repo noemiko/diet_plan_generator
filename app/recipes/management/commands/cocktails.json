@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Koktajl z batatów i bananów na mleku roślinnym",
+    "description": "Wszystkie składniki włożyć do blendera\nkielichowego i zmiksować na gładki koktajl.\nJeśli lubisz bardziej rzadkie koktajle dodaj\nwięcej mleka.",
+    "type": "breakfast",
+    "diet": "aip",
+    "ingredients": {
+      "Pickled": [
+        {
+          "name": "pickled cucumber",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Spices": [
+        {
+          "name": "cynamon",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "skórka z pomaranczy",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ],
+      "Fruits": [
+        {
+          "name": "dojrzały banan",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "mleko koko",
+          "measurement": "glass",
+          "quantity": 1.5
+        }
+      ],
+      "Starch": [
+        {
+          "name": "batat",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Koktajl z zielonych liści, owoców\njagodowych, bananów i mleka Koko",
+    "description": "Wszystkie składniki włożyć do blendera kielichowego i zmiksować na gładki\nkoktajl.\nJeśli koktajl jest za mało słodki, dodać kilka suszonych daktyli (wcześniej\nnamoczonych).",
+    "type": "breakfast",
+    "diet": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "korzeń kurkumy",
+          "measurement": "cm",
+          "quantity": 2
+        }
+      ],
+      "Fruits": [
+        {
+          "name": "dojrzały banan",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "owoce jagodowe",
+          "measurement": "glass",
+          "quantity": 0.5
+        },
+        {
+          "name": "mleko koko",
+          "measurement": "glass",
+          "quantity": 1.5
+        }
+      ],
+      "ProteinFruit": [
+        {
+          "name": "awokado",
+          "measurement": "item",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetables": [
+        {
+          "name": "jarmuż",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cytrynowy koktajl z jarmużem i\nbananem.",
+    "description": "Wszystkie składniki włożyć do\nblendera kielichowego i\nzmiksować na gładki koktajl. W\nrazie potrzeby dodać więcej\njogurtu lub wody.",
+    "type": "breakfast",
+    "diet": "aip",
+    "ingredients": {
+      "Fruits": [
+        {
+          "name": "dojrzały banan",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "sok z cytryny",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "mleko koko",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "ProteinFruit": [
+        {
+          "name": "awokado",
+          "measurement": "item",
+          "quantity": 0.5
+        }
+      ],
+      "GreenVegetables": [
+        {
+          "name": "jarmuż",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ]
+    }
+  }
+]
