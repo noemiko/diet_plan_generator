@@ -6,8 +6,9 @@ class Receipt(models.Model):
     TYPES = [
         ("breakfast", "breakfast"),
         ("lunch", "lunch"),
-        ("desert", "desert"),
+        ("dessert", "dessert"),
         ("snack", "snack"),
+        ("addition", "addition"),
     ]
 
     DIET = [
@@ -16,11 +17,13 @@ class Receipt(models.Model):
     ]
 
     name = models.CharField(max_length=100)
-    description = models.TextField(1000)
+    description = models.TextField()
     type = models.CharField(max_length=9, choices=TYPES)
     components = models.ManyToManyField(Ingredients, through='ReceiptComponent')
     diet_name = models.CharField(max_length=6, choices=DIET, default="AIP")
 
+    def __str__(self):
+        return self.name
 
 class ReceiptComponent(models.Model):
     MEASUREMENTS = [
@@ -31,9 +34,16 @@ class ReceiptComponent(models.Model):
         ("items", "items"),
         ("slices", "slices"),
         ("glasses", "glasses"),
-        ("cm", "cm")
+        ("cm", "cm"),
+        ("can", "can"),
+        ("ml", "ml"),
+        ("bunch", "bunch")
+
     ]
     component = models.ForeignKey(Ingredients, on_delete=models.CASCADE, default=None)
     quantity = models.FloatField()
     measurement = models.CharField(max_length=11, choices=MEASUREMENTS, default="grams")
     receipt = models.ForeignKey(Receipt, on_delete=models.CASCADE, default=None)
+
+    def __str__(self):
+        return self.receipt.name

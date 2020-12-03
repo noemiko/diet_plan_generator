@@ -1,0 +1,2 @@
+class UnknownIngredient(Exception):
+    pass

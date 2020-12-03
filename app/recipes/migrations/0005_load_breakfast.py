@@ -2,9 +2,14 @@
 
 from django.db import migrations
 from django.core.management import call_command
+from diet_plan_generator.settings import BASE_DIR
 
 def forwards_func(apps, schema_editor):
-    call_command('data_loader', file_path='recipes/management/commands/coctails.json', verbosity=2)
+    call_command('data_loader', file_path=BASE_DIR/'recipes/management/commands/cocktails.json', verbosity=2)
+    call_command('data_loader', file_path=BASE_DIR/'recipes/management/commands/dinners.json', verbosity=2)
+    call_command('data_loader', file_path=BASE_DIR/'recipes/management/commands/breakfasts.json', verbosity=2)
+    call_command('data_loader', file_path=BASE_DIR/'recipes/management/commands/soups.json', verbosity=2)
+    call_command('data_loader', file_path=BASE_DIR/'recipes/management/commands/lunches.json', verbosity=2)
 
 
 

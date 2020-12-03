@@ -66,3 +66,7 @@ class Drink(Ingredients):
 
 class Starch(Ingredients):
     pass
+
+class Liquid(Ingredients):
+    pass
+

@@ -1,0 +1,295 @@
+[
+  {
+    "name": "Krakersy z plantana",
+    "description": "Plantany obieramy, kroimy i\nwrzucamy do robota kuchennego, dodajemy resztę składników i dokładnie\nmiksujemy.\nMasę przekładamy na blachę wyłożoną papierem. Z masy formujemy duży\nprostokąt.\nPieczemy w 180 ̊C przez ok. 15-20 min do momentu, aż wierzch będzie\nobeschnięty.\nZa pomocą noża do pizzy kroimy masę na 6 mniejszych prostokątów i\nrozdzielamy.\nPieczemy do zarumienienia się, a następnie przekładamy na drugą stronę i\npodpiekamy. Całość trwa ok. 40-50 min.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "rozmaryn",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ],
+      "Starch": [
+        {
+          "name": "plantan",
+          "measurement": "items",
+          "quantity": 2
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "big spoon",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cynamonowe kopytka z plantana z jarmuzem i kefirem koko",
+    "description": "Plantany najczęściej można dostać tylko niedojrzałe. W celu przyspieszenia\nprocesu dojrzewania wkładamy zielone plantany do torebki plastikowej z\njabłkiem, zakręcamy torebkę tak, aby dostęp powietrza był ograniczony i\numieszczamy w ciepłym miejscu. Powinny dojrzeć w ciągu 5 dni (w lecie nawet\nszybciej). Jak są dojrzałe, to są żółte i łatwo schodzi z nich skóra.\nKroimy dojrzałe plantany lekko na skos, na kształt kopytek. Wkładamy do\ngarnka/koszyczka do gotowania na parze, posypujemy cynamonem,\nprzykrywamy i gotujemy na parze przez 5 minut.\nPo 5 minutach dodajemy do nich 1 szklankę pokrojonego jarmużu i zostawiamy\nna ogniu pod przykryciem jeszcze przez 1 minutę.\n\nPlantany z jarmużem przekładamy na talerz. Spożywamy z kefirem z mleka\nKOKO. Dojrzałe plantany będą słodkie same w sobie, ale można do nich\njeszcze dodać 1 łyżeczkę miodu",
+    "type": "breakfast",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "cynamon",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ],
+      "Starch": [
+        {
+          "name": "plantan",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "jarmuż",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "kefir z mleka koko",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Krem z marchewki",
+    "description": "Na oliwie szklimy pora, dodajemy marchewkę pokrojoną w plasterki,\npodsmażamy kilka minut, dodajemy kurkumę i imbir, a następnie zalewamy\nwodą. Gotujemy do miękkości. Dodajemy mleko KOKO, solimy i blendujemy.\nDekorujemy świeżym tymiankiem.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "kurkuma",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "imbir",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "tymianek",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "woda",
+          "measurement": "glass",
+          "quantity": 0.5
+        },
+        {
+          "name": "mleko koko",
+          "measurement": "glass",
+          "quantity": 0.25
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "marchew",
+          "measurement": "gram",
+          "quantity": 250
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Placuszki z dyni",
+    "description": "Zetrzyj dynie na drobnych oczkach. Smażyć na oleju kokosowym, odsączyć na ręczniku papierowym nadmiar\ntłuszczu",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "soda oczyszczona",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "miód",
+          "measurement": "small spoon",
+          "quantity": 2
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "mleko koko",
+          "measurement": "glass",
+          "quantity": 2
+        },
+        {
+          "name": "sok z cytryny",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "dynia",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "olej kokosowy",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "Starch": [
+        {
+          "name": "mąka z plantana",
+          "measurement": "glass",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chleb z plantanów wytrawny",
+    "description": "Przygotowanie:\nPiekarnik rozgrzewamy do 180°C. Do miksera wrzucamy: plantana, jabłko ze\nskórką, olej kokosowy, wodę i dokładnie blendujemy na gładki mus. W\nmiędzyczasie rozpuszczamy żelatynę w gorącej wodzie – szybko i energicznie\ni dodajemy do musu z owoców. W oddzielnej misce mieszamy suche składniki:\nmąkę kokosową, mąkę bananową, sól, sodę i przyprawy. Dodajemy mokre\nskładniki do suchych i dokładnie mieszamy. Keksówki wykładamy papierem do\npieczenia, wylewamy do nich masę i wstawiamy do nagrzanego piekarnika na\n50 minut. Po tym czasie wyłączamy piekarnik, otwieramy go, aby została 15\ncentymetrowa szpara i zostawiamy tam chlebek na kolejne 15 minut.\nWyjmujemy i studzimy na kuchennym blacie. Kroimy dopiero po\nwystygnięciu, bo inaczej może się rozpadać.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "soda oczyszczona",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "wędzona papryka",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "tymianek",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "rozmaryn",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "agar",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "woda",
+          "measurement": "big spoon",
+          "quantity": 3
+        },
+        {
+          "name": "sok z cytryny",
+          "measurement": "big spoon",
+          "quantity": 2
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "mąka kokosowa",
+          "measurement": "gram",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "glass",
+          "quantity": 0.75
+        }
+      ],
+      "Starch": [
+        {
+          "name": "plantan",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "mąka z plantanów",
+          "measurement": "gram",
+          "quantity": 40
+        }
+      ]
+    }
+  },
+    {
+    "name": "Chleb z plantanów wytrawny 2",
+    "description": "Wylać na płaską blaszkę - placek grubości 2-3 mm. W nagrzanym piekarniku\npiec 13-15 min w temp. 200°C (trzeba \"wyczuć piekarnik”).\n\nNa pół porcji wszystko zmniejszyć o połowę prócz wody. Wody należy wlać\n160-180 g.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "soda oczyszczona",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "woda",
+          "measurement": "grams",
+          "quantity": 280
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "grams",
+          "quantity": 60
+        }
+      ],
+      "Starch": [
+        {
+          "name": "mąka z plantanów",
+          "measurement": "grams",
+          "quantity": 200
+        }
+      ]
+    }
+  }
+]

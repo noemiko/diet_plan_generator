@@ -1,0 +1,579 @@
+[
+  {
+    "name": "Ragu z warzywami.",
+    "description": "Warzywa obrać i drobno pokroić na następnie podsmażyć w dużym garnku na\n2 łyżkach oliwy na złoty kolor.\nDo warzyw dodać mięso wymieszać je z warzywami, wlać nieco wody i dusić,\naż mięso się zetnie i nie będzie surowe.\nNastępnie wlać przecier pomidorowy i dodać przyprawy.\nDusić do około 30 minut. Podawać z pieczonymi słodkimi ziemniakami lub\npuree z yamu.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "bazylia",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "oregano",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Meat": [
+        {
+          "name": "mielone mięso drobiowe",
+          "measurement": "grams",
+          "quantity": 300
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "por",
+          "measurement": "cm",
+          "quantity": 5
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "łodyga selera naciowego",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "czerwona papryka",
+          "measurement": "items",
+          "quantity": 0.5
+        },
+        {
+          "name": "kartonik przecieru pomidorowy",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Udziec z indyka po mediolańsku",
+    "description": "Warzywa obrać, drobno posiekać i podsmażyć na oliwie na złoty kolor.\nUdziec z indyka pokroić na mniejsze kawałki i podsmażyć na oliwie na złoty\nkolor. Pod koniec dodać wino i poczekać aż odparuje. Następnie do mięsa\ndodać warzywa i całość zalać bulionem. Dusić do momentu aż płyn się\nzredukuje. Doprawić do smaku solą i pieprzem.\nW tym czasie posiekaną natkę pietruszki połączyć z pokrojoną drobno skórką\nz cytryny.\nGotowe danie posypać cytrynową natką i podawać z ulubioną bulwą (słodkie\nziemniaki, yam, itd).",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "natka pietruszki",
+          "measurement": "glass",
+          "quantity": 0.5
+        },
+        {
+          "name": "skórka z cytryny",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "łodyga selera naciowego",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 2
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "woda",
+          "measurement": "glass",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  {
+    "name": "Surówka z kapusty pekińskiej i kiełków",
+    "description": "Ogórek, marchewkę i rzodkiewki obrać i pokroić w cienkie plasterki, włożyć do\ndużej miski.\nDodać kiełki, kapustę, szczypiorek i koperek. Doprawić do smaku sokiem z\ncytryny, oliwą i solą.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "szczypiorek",
+          "measurement": "big spoon",
+          "quantity": 2
+        },
+        {
+          "name": "koperek",
+          "measurement": "big spoon",
+          "quantity": 2
+        },
+        {
+          "name": "sól",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "Cabbage": [
+        {
+          "name": "kapusta pekińska",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "ogórek",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "kiełki groszku/jarmużu,słoneczka",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "kiść rzodkiewek",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "cytryna",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Yam a'la purée ziemniaczane",
+    "description": "Bulwę Yam kroimy w równej szerokości krążki, obieramy ze skóry i kroimy w\nrówne kostki, mniej więcej 3x3cm.\nWrzucamy do garnka z zimną wodą z dodatkiem soku z cytryny, soli i szczyptą\ncukru. Moczymy 10-20 minut - taka zalewa pozbywa go goryczki i\nspecyficznego posmaku.\nNastępnie wylewamy wodę, przepłukujemy yama, zalewamy wrzątkiem i\ndodajemy z dodatkiem soli, cytryny i szczypty cukru.\nGotujemy 15-25 minut aż będzie miękki (w zależności czy Yam jest młody czy\nstary).\nPotem zlewamy wodę, zostawiając na dnie tylko odrobinę i ubijamy tłuczkiem\ndo ziemniaków w garnku aż Yam zacznie się \"ciągnąć\" tworząc konsystencję\nwielkiej kluski.\nIm dłużej i mocniej się tłucze tym jest lepsza. Jak jest całość za sucha, można\ndodać odrobinę wody i ubijać dalej. Można podać jako purée ziemniaczane lub\nmożna z masy zrolować w ręku kluseczki.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Starch": [
+        {
+          "name": "bulwa yam",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Frytki z Yama",
+    "description": "Bulwę Yam obieramy ze skóry, kroimy na kształt grubych frytek\nWrzucamy do garnka z zimną wodą z dodatkiem soku z cytryny, soli i szczyptą\ncukru. Moczymy 30-60 minut - taka zalewa pozbywa go goryczki i\nspecyficznego posmaku.\nNastępnie wylewamy wodę, przepłukujemy yama, kładziemy na papier do\npieczenia (można dodać trochę oliwy z oliwek).\nPieczemy między 35 a 45 minut w temp.180 stopni, spożywamy z solą.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Starch": [
+        {
+          "name": "bulwa yam",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kurczak z po tajlandzku z kurkumą i trawą cytrynową, z dynią i batatami,\ni szparagami",
+    "description": "Cebulę usmażyć na wodzie i oliwie z oliwek, dodać dynię bądź cukinię i mięso\nkurczaka. Gotować przez 5-7 minut, następnie dodać trawę cytrynową, kokos,\nimbir, kurkumę, i gotować przez następne 5 minut. Na samym końcu dodać\nszparagi, czosnek, pieprz i sól i zostawić na wolnym ogniu przez 5-7 minut.\nSerwować jako sos do ugotowanych bądź upieczonych patatów z surówką.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Poultry": [
+        {
+          "name": "pierś z kurczaka",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "cukinia",
+          "measurement": "glass",
+          "quantity": 0.5
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "szparagi",
+          "measurement": "items",
+          "quantity": 5
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 2
+        }
+      ],
+      "Spices": [
+        {
+          "name": "kurkuma",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "imbir",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "trawa cytrynowa",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "puszka mleka kokosowego",
+          "measurement": "can",
+          "quantity": 0.5
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Pieczony filet z łososia podany z puree z pochrzynu (yam) oraz\nwarzywami blanszowanymi",
+    "description": "Łososia myjemy i suszymy ręcznikiem papierowym. Zdejmujemy skórę i\npozbywamy się ewentualnych ości.\nPrzyprawiamy odrobiną soli i odstawiamy.\nBulwę obieramy, dokładnie myjemy kroimy na mniejsze kawałki, moczymy\nnajpierw w wodzie z dodatkiem soku z cytryny przez koło 30 minut, a\nnastępnie gotujemy w świeżej, lekko osolonej wodzie do miękkości (około 30\n– 40minut).\nW połowie gotowania pochrzynu skrapiamy cytryną łososia i wkładamy na 20\nminut do piekarnika nagrzanego do temperatury 150 st.\nPrzygotowujemy warzywa. Zaczynamy od marchewki obieramy i kroimy pod\nkątem w talarki.\nWrzucamy do posolonego wrzątku. Wrzucamy kolejne warzywa w odstępach\ndwu minutowych zaczynając od kalafiora, a kończąc na brokułach. 7. Gdy\nziemniak będzie miękki robimy z niego puree, wlewamy łyżkę oliwy z oliwek i\nugniatamy. Pochrzyn jest twardszy niż zwykły ziemniak, można więc użyć\nblendera - będzie bardziej gładki.\nNa koniec dodajemy posiekaną natkę i mieszamy łyżką (bez miksowania)",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Fish": [
+        {
+          "name": "łosoś",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Starch": [
+        {
+          "name": "bulwa yam",
+          "measurement": "grams",
+          "quantity": 250
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "kalafior lub brokuł",
+          "measurement": "grams",
+          "quantity": 250
+        },
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "cytryna",
+          "measurement": "items",
+          "quantity": 0.5
+        }
+      ],
+      "Spices": [
+        {
+          "name": "pietruszka lub koperek",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Łosoś ze szpinakiem",
+    "description": "Łososia umyć i natrzeć solą i pieprzem\nNastępnie ugotować go na parze około 20 minut (wszystko zależy od\nwielkości).\nW międzyczasie na 1 łyżce oliwy podsmażyć czosnek niedźwiedzi, dodać do\nniego posiekany szpinak i dusić na wolnym ogniu do momentu, aż szpinak\nzwiotczeje, ale będzie jeszcze pięknie zielony. W razie potrzeby dodać nieco\nwody.\nNa talerz położyć uduszony szpinak, a na nim ugotowanego na parze łososia.\nPodawać z frytkami z yama lub yam’em a’la ziemniaki",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Fish": [
+        {
+          "name": "łosoś",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "szpinak",
+          "measurement": "glass",
+          "quantity": 2
+        },
+        {
+          "name": "brokuł",
+          "measurement": "grams",
+          "quantity": 250
+        }
+      ],
+      "Spices": [
+        {
+          "name": "czosnek niedźwiedzi",
+          "measurement": "small spoon",
+          "quantity": 2
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Gulasz z boczniaka i batata",
+    "description": "Cebulę obieramy, kroimy w piórka i podsmażamy na odrobinie oliwy lub w\nwersji beztłuszczowej dusimy na wodzie.\nBoczniaka czyścimy, kroimy w długie paski i wrzucamy do cebuli.\nPrzesmażamy na dużym ogniu.\nBatata obieramy, kroimy w kostkę ok. 1 cm i dorzucamy na patelnię. Kostka nie\nmusi być idealnie równa. Mniejsze kawałki się rozpadną i zagęszczą gulasz, a\nwiększe pozostaną w całości.\n4. Zalewamy ok. 1/2 szklanki wody, wrzucamy przyprawy, przykrywamy i\ndusimy do miękkości. W razie potrzeby dolewamy wodę. Po wyłączeniu gazu\ndodajemy dużą garść szpinaku, 2 obrane i pokrojone gałązki jarmużu lub\nzieloną cześć bok choy, mieszamy i przykrywamy, aż zielenina lekko się\npoddusi. Podajemy z surówką np. z czerwonej kapusty.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "GreenVegetable": [
+        {
+          "name": "jarmuż",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "Starch": [
+        {
+          "name": "batat",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "boczniak",
+          "measurement": "grams",
+          "quantity": 200
+        }
+      ],
+      "Spices": [
+        {
+          "name": "tymianek",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Szaszłyki tajskie",
+    "description": "Mięso marynujemy w przyprawach i oleju.\nOdstawiamy do lodówki (0,5 godz.- kilka godzin).\nPodsmażamy do zrumienienia i pieczemy w naczyniu żaroodpornym 20-30\nmin. w 180°C.\nNa patelni podsmażamy cukinię pokrojoną w grubą kostkę, pomidorki\ni ananasa. Nadziewamy na patyczki do szaszłyków. Podajemy na\npodduszonym szpinaku.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Meat": [
+        {
+          "name": "wieprzowina",
+          "measurement": "grams",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "pomidorki koktajlowe",
+          "measurement": "items",
+          "quantity": 6
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "ananas",
+          "measurement": "grams",
+          "quantity": 100
+        }
+      ],
+      "Fat": [
+        {
+          "name": "olej kokosowy",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "szpinak",
+          "measurement": "glass",
+          "quantity": 1
+        },
+        {
+          "name": "cukinia",
+          "measurement": "items",
+          "quantity": 0.5
+        }
+      ],
+      "Spices": [
+        {
+          "name": "kurkuma",
+          "measurement": "small spoon",
+          "quantity": 2
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "zioła",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "imbir",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Karkówka jagnięca",
+    "description": "Cukinię kroimy w grube plastry.\nMięso przyprawiamy i smarujemy olejem.\nTo samo robimy z cukinią. Grillujemy/ smażymy karkówkę, cukinię i pomidorki.\nSzpinak podduszamy krótko na patelni.\nPodajemy z oliwkami i np. frytkami z yama.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Meat": [
+        {
+          "name": "karkówka jagnięca",
+          "measurement": "grams",
+          "quantity": 200
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "pomidorki koktajlowe",
+          "measurement": "items",
+          "quantity": 10
+        }
+      ],
+      "GreenVegetable": [
+        {
+          "name": "szpinak",
+          "measurement": "glass",
+          "quantity": 1
+        },
+        {
+          "name": "cukinia",
+          "measurement": "items",
+          "quantity": 0.5
+        }
+      ],
+      "Spices": [
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "ProteinFruit": [
+        {
+          "name": "oliwki",
+          "measurement": "items",
+          "quantity": 8
+        }
+      ]
+    }
+  }
+]

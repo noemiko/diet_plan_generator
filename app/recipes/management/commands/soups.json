@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Krem z dyni na mleku kokosowym",
+    "description": "Cebulę i czosnek kroimy i przesmażamy.\nDodajemy obraną i pokrojoną marchew, świeży imbir i dynię\n(obraną, bez pestek, pokrojoną na mniejsze kawałki).\nZalewamy warzywa wodą lub wrzątkiem i gotujemy do miękkości (lub gotujemy\nw małej ilości wody a następne zalewamy przygotowanym wcześnien wywarem\nz kości).\nDodajemy mleko kokosowe, zagotowujemy, miksujemy na krem.\nDoprawiamy do smaku solą i cynamonem",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "imbir",
+          "measurement": "cm",
+          "quantity": 3
+        },
+        {
+          "name": "cynamon",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "dynia",
+          "measurement": "grams",
+          "quantity": 300
+        },
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 2
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "mleko koko",
+          "measurement": "ml",
+          "quantity": 100
+        }
+      ]
+    }
+  }
+]

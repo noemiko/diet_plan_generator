@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Pesto z buraka.",
+    "description": "Buraki gotujemy, studzimy, a następnie obieramy, kroimy i wrzucamy do\nblendera lub robota kuchennego z ostrzem typu S. Buraki powinny być zimne,\nzbyt gorące, mogą zaparzyć bazylię, która straci moc. Liście bazylii płuczemy\npod wodą i dodajemy do buraków. Czosnek obieramy i przeciskamy przez\npraskę do blendera. Warto zacząć od jednego ząbka, jeśli będzie mało\nwyczuwalny, wciskamy jeszcze jeden. Dodajemy oliwę i sól do smaku. Jeśli\nblender ma problem, żeby ruszyć można dodać odrobinę wody, ale ostrożnie,\nbo możemy za bardzo rozrzedzić pesto i stracić smak.\nCo jakiś czas robimy przerwę i zbieramy masę ze ścianek blendera. Gdy pesto\nbędzie już zmiksowane, dodajemy wiórki kokosowe i chwilę blendujemy. Mają\nsię one jedynie wymieszać, chcemy, żeby ich struktura była wyczuwalna (one\nzastępują orzechy).\nGotowe pesto przekładamy do słoika lub pojemnika i przechowujemy w\nlodówce.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "bazylia",
+          "measurement": "grams",
+          "quantity": 40
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "wiórki kokosowe",
+          "measurement": "grams",
+          "quantity": 40
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "gotowany burak",
+          "measurement": "items",
+          "quantity": 3
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 2
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "ml",
+          "quantity": 75
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chlebki z ziemniaków taro",
+    "description": "Taro obieramy, moczymy w wodzie przez godzinę (wodę potem odlewamy),\ngotujemy, ugniatamy tłuczkiem do ziemniaków i solimy do smaku.\nMożna dodać pokrojoną w kostkę cebulę oraz pokrojoną drobno natkę.\nDodajemy mąkę. Jeśli taro jest jeszcze lekko ciepłe, będzie trzeba dodać\nwięcej mąki, dlatego warto dać mu wystygnąć. Zagniatamy całość, aż\nwszystkie składniki będą dobrze połączone.\n\nOdrywamy kulkę wielkości mniej więcej piłeczki do golfa, zagniatamy ją dobrze\nw dłoniach, a następnie rozpłaszczamy na blasze, wyłożonej papierem do\npieczenia, na okręgi o grubości ok 0,5 cm i wielkości ok 8-10 cm. 5. Masa\npowinna być dość plastyczna, z łatwością odchodzić od rąk. Jeśli nie da się\nukręcić kulki, bo masa klei się do rąk, należy dodać więcej mąki.\nNa jednej blaszce mieści się 9 chlebków. Pieczemy w 220oC ok 30-40 min (w\nzależności od piekarnika) aż jedna strona się zarumieni, następnie\nprzerzucamy i pieczemy do zarumienienia drugiej strony ok 10-15 min. Chlebki\nnajlepiej smakują na ciepło, dlatego przed spożyciem można je podgrzać w\npiekarniku lub na suchej patelni. Wystudzone przechowujemy w lodówce.",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pietruszka",
+          "measurement": "bunch",
+          "quantity": 0.5
+        }
+      ],
+      "Starch": [
+        {
+          "name": "ziemniaki taro",
+          "measurement": "grams",
+          "quantity": 750
+        },
+        {
+          "name": "mąka bananowa",
+          "measurement": "grams",
+          "quantity": 50
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kopytka z ziemniaków taro",
+    "description": "Taro obieramy, gotujemy, ugniatamy tłuczkiem do ziemniaków i solimy do\nsmaku.\nDodajemy marantę i mąkę bananową. Jeśli taro jest jeszcze lekko ciepłe,\nbędzie trzeba dodać więcej mąki, dlatego warto dać mu wystygnąć.\nZagniatamy całość, aż wszystkie składniki będą dobrze połączone. Masa\npowinna być dość plastyczna, z łatwością odchodzić od dłoni. Jeśli się klei,\nnależy dodać więcej mąki. Odrywamy kawałek ciasta i wałkujemy na desce lub\nstolnicy na cienki wałek, a następnie kroimy w charakterystyczne romby.\nKopytka wrzucamy na osolony wrzątek. Gdy wypłyną na powierzchnię\ntrzymamy je jeszcze chwile, uważając, żeby się nie rozgotowały. Odcedzamy i\nprzekładamy do miski. Można polać odrobiną oliwy, żeby się nie posklejały.\nWystudzone kopytka trzymamy w lodówce.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Starch": [
+        {
+          "name": "ziemniaki taro",
+          "measurement": "grams",
+          "quantity": 500
+        },
+        {
+          "name": "maranta trzcinowa",
+          "measurement": "grams",
+          "quantity": 50
+        },
+        {
+          "name": "mąka bananowa",
+          "measurement": "grams",
+          "quantity": 50
+        }
+      ],
+    "Spices": [
+      {
+        "name": "sól",
+        "measurement": "big spoon",
+        "quantity": 1
+      }
+    ]
+    }
+  },
+  {
+    "name": "Burgery z batata",
+    "description": "Bataty obieramy i gotujemy do miękkości, a następnie ubijamy tłuczkiem do\nziemniaków na puree.\nOddzielamy różyczki brokułu, myjemy, gotujemy do miękkości i również\nugniatamy, ale niekoniecznie na gładko, mogą zostać większe kawałki brokuła.\nObieramy cebulę i kroimy ją w drobną kostkę. Koperek myjemy i drobno kroimy.\nCzosnek przeciskamy przez praskę.\nGdy batat i brokuł będą już zimne, wszystkie składniki łączymy w misce, solimy\ndo smaku i dodajemy mąki.\nCałość dokładnie mieszamy i formujemy burgery. Jeśli nie da się formować\nburgerów, bo masa klei się bardzo do rąk, należy dodać trochę mąki bananowej.\nBurgery układamy na blasze, najlepiej wyłożonej papierem do pieczenia, i\npieczemy w 200oC ok 40 min do zarumienienia. Przekręcamy burgery na drugą\nstronę i pieczemy z drugiej strony, ok 10-20 min. Wystudzone przechowujemy\nw lodówce.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Starch": [
+        {
+          "name": "batat",
+          "measurement": "grams",
+          "quantity": 1000
+        },
+        {
+          "name": "mąka bananowa",
+          "measurement": "grams",
+          "quantity": 100
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "brokuł",
+          "measurement": "grams",
+          "quantity": 350
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "mąka kokosowa",
+          "measurement": "grams",
+          "quantity": 40
+        }
+      ],
+      "Spices": [
+        {
+          "name": "koperek",
+          "measurement": "bush",
+          "quantity": 0.5
+        },
+        {
+          "name": "sól",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Zupa rybna z warzywami i yamem",
+    "description": "Wszystkie warzywa obrać, drobno pokroić, podsmażyć przez około 5 minut na\n2 łyżkach oliwy w dużym garnku.\nCałość zalać wrzątkiem (1 l), dodać liść ziele angielskie, liście laurowe i\ngotować na wolnym ogniu pod przykryciem.\nGdy warzywa są już prawie miękkie, dodać pokrojoną w paski rybę, gotować\njeszcze około 10 minut, aż ryba się zetnie i nie będzie surowa.\nNa koniec dodać przecier pomidorowy i przyprawy. Gdyby zupa była za gęsta\ndodać jeszcze nieco wody.\nTa zupa może być spożywana jako samodzielny posiłek – zawiera warzywa,\nskrobię (yam) oraz białko (ryba) i przez to powinna sycić sama w sobie.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Fish": [
+        {
+          "name": "filet z dorsza lub mintaja",
+          "measurement": "grams",
+          "quantity": 200
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "woda",
+          "measurement": "glass",
+          "quantity": 4
+        }
+      ],
+      "Starch": [
+        {
+          "name": "bulwa yam",
+          "measurement": "glass",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "papryka czerwona",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "przecier pomidorowy",
+          "measurement": "glass",
+          "quantity": 0.5
+        },
+        {
+          "name": "marchewka",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "korzeń pietruszki",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "seler naciowy",
+          "measurement": "items",
+          "quantity": 0.5
+        },
+        {
+          "name": "por",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Spices": [
+        {
+          "name": "liść laurowy",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "sól",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pietruszka",
+          "measurement": "bush",
+          "quantity": 1
+        },
+        {
+          "name": "tymianek",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "papryka słodka wędzona",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Krem z pieczonych pomidorów",
+    "description": "Naczynie żaroodporne smarujemy 1 łyżeczką oliwy, układamy pomidory\npokrojone w ćwiartki oraz pora, doprawiamy, układamy listki i bazylii.\n\nSkrapiamy oliwą i wstawiamy do piekarnika nagrzanego do 180 °C na 30 minut.\nNastępnie przekładamy do miski i blendujemy na krem.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "GreenVegetable": [
+        {
+          "name": "cukinia",
+          "measurement": "glass",
+          "quantity": 0.5
+        }
+      ],
+      "Fruit": [
+        {
+          "name": "pomidory",
+          "measurement": "items",
+          "quantity": 3
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "por",
+          "measurement": "grams",
+          "quantity": 10
+        }
+      ],
+      "Spices": [
+        {
+          "name": "liść bazyli",
+          "measurement": "items",
+          "quantity": 10
+        },
+        {
+          "name": "oregano",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "big spoon",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 2
+        }
+      ]
+    }
+  }
+]
