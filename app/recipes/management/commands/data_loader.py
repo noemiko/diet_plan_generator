@@ -1,7 +1,7 @@
 import json
 import copy
 from django.core.management.base import BaseCommand, CommandError
-from recipes.models import Receipt, ReceiptComponent
+from recipes.models import Recipe, RecipeIngredient
 from ingredients.models import Protein, Ingredients, Vegetable, Fruit, Meat
 from ingredients.exceptions import UnknownIngredient
 
@@ -26,13 +26,13 @@ def receipt_serializer(receipts):
     receipts = copy.deepcopy(receipts)
     for receipt in receipts:
         receipt_ingredients = receipt.pop("ingredients")
-        created_receipt, is_new = Receipt.objects.get_or_create(
+        created_receipt, is_new = Recipe.objects.get_or_create(
             **receipt,
             defaults={"name": receipt["name"]}
         )
         ingredients_classes = extract_ingredients(receipt_ingredients)
         for ingredient, details in ingredients_classes:
-            ReceiptComponent.objects.get_or_create(**details, receipt=created_receipt, component=ingredient)
+            RecipeIngredient.objects.get_or_create(**details, receipt=created_receipt, component=ingredient)
 
 
 def extract_ingredients(receipt_ingredients):

@@ -1,5 +1,5 @@
 import pytest
-from recipes.models import Receipt, ReceiptComponent
+from recipes.models import Recipe, RecipeIngredient
 from ingredients.models import Fruit
 from recipes.management.commands.data_loader import receipt_serializer
 from ingredients.exceptions import UnknownIngredient
@@ -23,7 +23,7 @@ def test_creating_receipt():
     }
     }]
     receipt_serializer(raw_receipt)
-    assert Receipt.objects.get(name=receipt_name)
+    assert Recipe.objects.get(name=receipt_name)
 
 @pytest.mark.django_db
 def test_creating_receipt_only_once():
@@ -44,7 +44,7 @@ def test_creating_receipt_only_once():
     }]
     receipt_serializer(raw_receipt)
     receipt_serializer(raw_receipt)
-    created_receipt = Receipt.objects.filter(name=receipt_name)
+    created_receipt = Recipe.objects.filter(name=receipt_name)
     assert len(created_receipt) == 1
 
 @pytest.mark.django_db
@@ -129,9 +129,9 @@ def test_creating_receipt_ingredients():
     }
     }]
     receipt_serializer(raw_receipt)
-    created_receipt = Receipt.objects.get(name=receipt_name)
+    created_receipt = Recipe.objects.get(name=receipt_name)
     created_ingredient = Fruit.objects.get(name=expected_ingredient_name)
-    components = ReceiptComponent.objects.get(component=created_ingredient, receipt=created_receipt)
+    components = RecipeIngredient.objects.get(component=created_ingredient, receipt=created_receipt)
     assert components.measurement == "items"
     assert components.quantity == 1
 
@@ -155,8 +155,8 @@ def test_creating_receipt_ingredients_only_once():
     }]
     receipt_serializer(raw_receipt)
     receipt_serializer(raw_receipt)
-    created_receipt = Receipt.objects.get(name=receipt_name)
+    created_receipt = Recipe.objects.get(name=receipt_name)
     created_ingredient = Fruit.objects.get(name=expected_ingredient_name)
-    components = ReceiptComponent.objects.get(component=created_ingredient, receipt=created_receipt)
+    components = RecipeIngredient.objects.get(component=created_ingredient, receipt=created_receipt)
     assert components.measurement == "items"
     assert components.quantity == 1

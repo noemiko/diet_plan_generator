@@ -2,13 +2,21 @@ from django.db import models
 from ingredients.models import Ingredients
 
 
-class Receipt(models.Model):
+class Recipe(models.Model):
+    BREAKFAST = "breakfast"
+    LUNCH = "lunch"
+    DESSERT = "dessert"
+    SNACK = "snack"
+    ADDITION = "addition"
+    DINNER = "dinner"
+
     TYPES = [
-        ("breakfast", "breakfast"),
-        ("lunch", "lunch"),
-        ("dessert", "dessert"),
-        ("snack", "snack"),
-        ("addition", "addition"),
+        (BREAKFAST, "breakfast"),
+        (LUNCH, "lunch"),
+        (DESSERT, "dessert"),
+        (SNACK, "snack"),
+        (ADDITION, "addition"),
+        (DINNER, "dinner"),
     ]
 
     DIET = [
@@ -19,13 +27,14 @@ class Receipt(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     type = models.CharField(max_length=9, choices=TYPES)
-    components = models.ManyToManyField(Ingredients, through='ReceiptComponent')
+    components = models.ManyToManyField(Ingredients, through='RecipeIngredient')
     diet_name = models.CharField(max_length=6, choices=DIET, default="AIP")
 
     def __str__(self):
         return self.name
 
-class ReceiptComponent(models.Model):
+
+class RecipeIngredient(models.Model):
     MEASUREMENTS = [
         ("small spoon", "small spoon"),
         ("big spoon", "big spoon"),
@@ -43,7 +52,7 @@ class ReceiptComponent(models.Model):
     component = models.ForeignKey(Ingredients, on_delete=models.CASCADE, default=None)
     quantity = models.FloatField()
     measurement = models.CharField(max_length=11, choices=MEASUREMENTS, default="grams")
-    receipt = models.ForeignKey(Receipt, on_delete=models.CASCADE, default=None)
+    receipt = models.ForeignKey(Recipe, on_delete=models.CASCADE, default=None)
 
     def __str__(self):
-        return self.receipt.name
+        return f"{self.id} {self.receipt.name}"

@@ -2,18 +2,10 @@
 
 App to generate weekly diet plan based on AIP requirements.
 Planner generate shop list for each day and for whole week.
-It also contains information how requirements are fulfilled.
+It will also contains information how requirements are fulfilled.
 
-
+Available scripts
 ```
-
-docker exec -it foo python manage.py createsuperuser
-
-```
-docker-compose run --rm web python manage.py makemigrations
-
-```
-docker-compose run --rm web python manage.py
-```
-
+docker-compose run --rm web python manage.py weekly_plan_generator
  docker-compose run --rm web python manage.py data_loader -f /usr/src/app/recipes/management/commands/cocktails.json
+```

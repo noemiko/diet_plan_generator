@@ -2,7 +2,7 @@
   {
     "name": "Koktajl z batatów i bananów na mleku roślinnym",
     "description": "Upiecz batata i pokrój w dużą kostkę. Wszystkie składniki włożyć do blendera\nkielichowego i zmiksować na gładki koktajl.\nJeśli lubisz bardziej rzadkie koktajle dodaj\nwięcej mleka.",
-    "type": "breakfast",
+    "type": "addition",
     "diet_name": "aip",
     "ingredients": {
       "Spices": [
@@ -75,45 +75,6 @@
           "name": "awokado",
           "measurement": "item",
           "quantity": 1
-        }
-      ],
-      "GreenVegetable": [
-        {
-          "name": "jarmuż",
-          "measurement": "glass",
-          "quantity": 1
-        }
-      ]
-    }
-  },
-  {
-    "name": "Cytrynowy koktajl z jarmużem i\nbananem.",
-    "description": "Wszystkie składniki włożyć do\nblendera kielichowego i\nzmiksować na gładki koktajl. W\nrazie potrzeby dodać więcej\njogurtu lub wody.",
-    "type": "breakfast",
-    "diet_name": "aip",
-    "ingredients": {
-      "Fruit": [
-        {
-          "name": "dojrzały banan",
-          "measurement": "items",
-          "quantity": 1
-        },
-        {
-          "name": "sok z cytryny",
-          "measurement": "big spoon",
-          "quantity": 1
-        },
-        {
-          "name": "mleko koko",
-          "measurement": "glass",
-          "quantity": 1
-        }
-      ],
-      "ProteinFruit": [
-        {
-          "name": "awokado",
-          "measurement": "item",
-          "quantity": 0.5
         }
       ],
       "GreenVegetable": [

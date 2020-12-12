@@ -20,7 +20,7 @@ def reverse_func(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('recipes', '0004_auto_20201125_2036'),
+        ('recipes', '0001_initial'),
     ]
 
     operations = [

@@ -81,6 +81,13 @@
     "type": "lunch",
     "diet_name": "aip",
     "ingredients": {
+      "Poultry": [
+        {
+          "name": "udziec z indyka",
+          "measurement": "grams",
+          "quantity": 400
+        }
+      ],
       "Spices": [
         {
           "name": "natka pietruszki",
@@ -458,7 +465,7 @@
         {
           "name": "wieprzowina",
           "measurement": "grams",
-          "quantity": 1
+          "quantity": 100
         }
       ],
       "Vegetable": [

@@ -1,22 +1,16 @@
-
 from django.contrib import admin
-from recipes.models import Receipt,ReceiptComponent
-from ingredients.models import Ingredients
-# Register your models here.
-# class AuthorAdmin(admin.ModelAdmin):
-#     pass
+from recipes.models import Recipe, RecipeIngredient
 
-class BookInline(admin.TabularInline):
-    model = ReceiptComponent
 
-class BookInline2(admin.TabularInline):
-    model = Ingredients
+class RecipeIngredientInline(admin.TabularInline):
+    model = RecipeIngredient
 
-class AuthorAdmin(admin.ModelAdmin):
+
+class InlineAdmin(admin.ModelAdmin):
     inlines = [
-        BookInline,
+        RecipeIngredientInline,
 
     ]
-admin.site.register(Receipt, AuthorAdmin)
 
-# admin.site.register(ReceiptComponent, AuthorAdmin)
+
+admin.site.register(Recipe, InlineAdmin)
