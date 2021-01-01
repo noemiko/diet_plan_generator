@@ -1,5 +1,5 @@
 from django.db import models
-from ingredients.models import Ingredients
+from ingredients.models import Ingredients, Starch, Vegetable, Meat, Spices
 
 
 class Recipe(models.Model):
@@ -32,6 +32,18 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_ingredients(self):
+        print(self.components)
+        print()
+        for i in self.recipeingredient_set.all():
+            # print(i.objects.select_subclasses(Starch))
+
+            print(type(i.component))
+            print(type(i.component.cast()))
+            print(type(i))
+            if issubclass(i.__class__, Starch):
+                return {"starch": i}
 
 
 class RecipeIngredient(models.Model):

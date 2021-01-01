@@ -52,5 +52,74 @@
         }
       ]
     }
+  },
+    {
+    "name": "Krem z buraczków",
+    "description": "4 cebule i por kroimy w piórka, podsmażamy w garnku na oleju kokosowym do zeszklenia.\nObieramy buraki i kroimy w kostkę. Dodajemy do garnka najszybciej, gdyż buraki gotują się\nnajdłużej. Potem obieramy, kroimy i dorzucamy do garnka resztę warzyw. Dodajemy przyprawy,\noprócz tymianku (jeśli zmiksujemy zupę z tymiankiem, będzie miała gorzki smak). Zalewamy wodą\ni gotujemy do miękkości warzyw - około 30 minut. Zdejmujemy z ognia i miksujemy na krem.\nDodajemy soku z cytryny i mieszamy. Smakujemy, ewentualnie doprawiamy i dodajemy tymianku.",
+    "type": "dinner",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "imbir",
+          "measurement": "cm",
+          "quantity": 3
+        },
+        {
+          "name": "cynamon",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "burak",
+          "measurement": "items",
+          "quantity": 5
+        },
+        {
+          "name": "korzeń pietruszki",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 4
+        },
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 3
+        },
+        {
+          "name": "por",
+          "measurement": "items",
+          "quantity": 1
+        },
+                {
+          "name": "marchewki",
+          "measurement": "items",
+          "quantity": 3
+        },
+                        {
+          "name": "seler",
+          "measurement": "items",
+          "quantity": 3
+        }
+      ],
+      "Liquid": [
+        {
+          "name": "mleko koko",
+          "measurement": "ml",
+          "quantity": 100
+        }
+      ]
+    }
   }
 ]

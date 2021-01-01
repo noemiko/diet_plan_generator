@@ -19,6 +19,20 @@ def test_shop_list_divided_by_meal_when_one_ingredient():
 
 
 @pytest.mark.django_db
+def test_shop_list_divided_by_ingredient_types_when_one_ingredient():
+    simple_receipt = Recipe.objects.get(name="Frytki z Yama")
+    plan = DayPlan.objects.create(
+        breakfast=simple_receipt,
+        lunch=simple_receipt,
+        dinner=simple_receipt)
+    ingredients = plan.get_shop_list_divided_by_meal()
+    assert ingredients["starch"] == [{"name": "bulwa yam", "measurement": "items", "quantity": 1.0}]
+    assert ingredients["meat"] == []
+    assert ingredients["vegetables"] == []
+    assert ingredients["spices"] == []
+
+
+@pytest.mark.django_db
 def test_sum_day_shop_list_when_one_ingredient():
     simple_receipt = Recipe.objects.get(name="Frytki z Yama")
     plan = DayPlan.objects.create(
@@ -31,7 +45,7 @@ def test_sum_day_shop_list_when_one_ingredient():
 
 @pytest.mark.django_db
 def test_day_shop_list_divided_by_meals_on_multiply_ingredients():
-    simple_receipt = Receipt.objects.get(name="Chlebki z ziemniaków taro")
+    simple_receipt = Recipe.objects.get(name="Chlebki z ziemniaków taro")
     plan = DayPlan.objects.create(
         breakfast=simple_receipt,
         lunch=simple_receipt,
@@ -49,7 +63,7 @@ def test_day_shop_list_divided_by_meals_on_multiply_ingredients():
 
 @pytest.mark.django_db
 def test_sum_day_shop_list_when_multiply_ingredients():
-    simple_receipt = Receipt.objects.get(name="Chlebki z ziemniaków taro")
+    simple_receipt = Recipe.objects.get(name="Chlebki z ziemniaków taro")
     plan = DayPlan.objects.create(
         breakfast=simple_receipt,
         lunch=simple_receipt,

@@ -15,7 +15,20 @@ class DayPlan(models.Model):
         shop_list_by_meals = defaultdict(list)
         for meal_name, meal in [("breakfast", self.breakfast), ('lunch', self.lunch), ("dinner", self.dinner)]:
             ingredients = []
-            for receipt_component in meal.receiptcomponent_set.all():
+            for receipt_component in meal.recipeingredient_set.all():
+                ingredient_details = {
+                    "name": receipt_component.component.name,
+                    "measurement": receipt_component.measurement,
+                    "quantity": receipt_component.quantity}
+                ingredients.append(ingredient_details)
+            shop_list_by_meals.update({meal_name: ingredients})
+        return shop_list_by_meals
+
+    def get_shop_list_divided_by_ingredients(self):
+        shop_list_by_meals = defaultdict(list)
+        for meal_name, meal in [("breakfast", self.breakfast), ('lunch', self.lunch), ("dinner", self.dinner)]:
+            ingredients = []
+            for receipt_component in meal.recipeingredient_set.all():
                 ingredient_details = {
                     "name": receipt_component.component.name,
                     "measurement": receipt_component.measurement,
@@ -55,7 +68,7 @@ class DayPlan(models.Model):
 
     def get_all_ingredients_details(self):
         for meal in (self.breakfast, self.lunch, self.dinner):
-            for receipt_component in meal.receiptcomponent_set.all():
+            for receipt_component in meal.recipeingredient_set.all():
                 yield {
                     "name": receipt_component.component.name,
                     "measurement": receipt_component.measurement,

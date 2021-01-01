@@ -1,4 +1,172 @@
 [
+    {
+    "name": "Bitki wołowe z cebulką",
+    "description": "Bitki wołowe z cebulką, gotowane buraczki i puree ze yama. Mięso najlepiej zamarynować przez noc w przyprawach. W miseczce wymieszać sól, pieprz, przyprawy i olej. Przygotowaną pastą natrzeć rozbite i wystekowane mięso. Włożyć do plastikowego pojemnika lub miski, przykryć i wstawić do lodówki na całą noc.Przed smażeniem mięso ogrzać w temp. pokojowej. Rozgrzać patelnię, posmarować olejem i partiami obsmażać mięso z dwóch stron do lekkiego zrumienia się. Odkładać do garnka, powtarzać z resztą mięsa.\nNa koniec zrumienić czosnek pokrojony na plasterki oraz cebulę (przekroić ją na 4 części i każdą część pokroić na plasterki). Włożyć do mięsa.\nDo garnka z mięsem wlać wrzątek (do przykrycia mięsa) i zagotować. Dodać ziela angielskie, liście laurowe, majeranek. Przykryć i dusić pod przykryciem przez około 3 godziny lub do czasu aż mięso będzie miękkie. W razie potrzeby uzupełnić wodę.\n Przed smażeniem mięso ogrzać w temp. pokojowej. Rozgrzać patelnię, posmarować olejem i partiami obsmażać mięso z dwóch stron do lekkiego zrumienia się. Odkładać do garnka, powtarzać z resztą mięsa.\nNa koniec zrumienić czosnek pokrojony na plasterki oraz cebulę (przekroić ją na 4 części i każdą część pokroić na plasterki). Włożyć do mięsa.\nDo garnka z mięsem wlać wrzątek (do przykrycia mięsa) i zagotować. Dodać ziela angielskie, liście laurowe, majeranek. Przykryć i dusić pod przykryciem przez około 3 godziny lub do czasu aż mięso będzie miękkie. W razie potrzeby uzupełnić wodę.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "ząbek czosnku",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "majeranek",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "liść laurowy",
+          "measurement": "items",
+          "quantity": 2
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Meat": [
+        {
+          "name": "mięso wołowe wystekowane",
+          "measurement": "grams",
+          "quantity": 1000
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "warzywa",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "cebula",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Duszony z warzywami dorsz z sosem z bazylii i awokado",
+    "description": "Duszony z warzywami dorsz z sosem z bazylii i awokado, puree\nze słodkich ziemniaków i mleka kokosowego, liście rukoli z\npomidorkami koktajlowymi",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "bazylia",
+          "measurement": "bush",
+          "quantity": 1
+        },
+        {
+          "name": "sok z limonki",
+          "measurement": "big spoon",
+          "quantity": 2
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Fish": [
+        {
+          "name": "dorsz",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "warzywa",
+          "measurement": "items",
+          "quantity": 1
+        },
+        {
+          "name": "awokado",
+          "measurement": "items",
+          "quantity": 1
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bitki wołowe",
+    "description": "Mieloną cielęcinę mieszamy w miseczce ze szczypiorkiem, startą cukinią i\nprzyprawami, formujemy małe pulpeciki. Pulpety można zagęścić małą iloscią\nmąki z maranty trzcinowej, ale najczęściej nie ma takiej potrzeby\nPodsmażamy je na oliwie, po czym dodajemy passatę i mleko- gotujemy ok.20-\n30 minut (zależnie od wielkości pulpetów).\nSos doprawiamy solą, pieprzem i oregano.",
+    "type": "lunch",
+    "diet_name": "aip",
+    "ingredients": {
+      "Spices": [
+        {
+          "name": "szczypiorek",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "oregano",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "sól",
+          "measurement": "small spoon",
+          "quantity": 1
+        },
+        {
+          "name": "pieprz",
+          "measurement": "small spoon",
+          "quantity": 1
+        }
+      ],
+      "Meat": [
+        {
+          "name": "mielona cielęcina",
+          "measurement": "grams",
+          "quantity": 100
+        }
+      ],
+      "Vegetable": [
+        {
+          "name": "cukinia",
+          "measurement": "big spoon",
+          "quantity": 1
+        },
+        {
+          "name": "passata pomidorowa",
+          "measurement": "grams",
+          "quantity": 125
+        }
+      ],
+      "Fat": [
+        {
+          "name": "oliwa z oliwek",
+          "measurement": "small spoon",
+          "quantity": 0.5
+        }
+      ]
+    }
+  },
   {
     "name": "Ragu z warzywami.",
     "description": "Warzywa obrać i drobno pokroić na następnie podsmażyć w dużym garnku na\n2 łyżkach oliwy na złoty kolor.\nDo warzyw dodać mięso wymieszać je z warzywami, wlać nieco wody i dusić,\naż mięso się zetnie i nie będzie surowe.\nNastępnie wlać przecier pomidorowy i dodać przyprawy.\nDusić do około 30 minut. Podawać z pieczonymi słodkimi ziemniakami lub\npuree z yamu.",
