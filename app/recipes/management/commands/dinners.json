@@ -271,7 +271,7 @@
     "type": "dinner",
     "diet_name": "aip",
     "ingredients": {
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "cukinia",
           "measurement": "glass",

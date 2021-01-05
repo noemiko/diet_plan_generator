@@ -70,16 +70,16 @@
           "quantity": 1.5
         }
       ],
-      "ProteinFruit": [
+      "Protein_ńFruit": [
         {
           "name": "awokado",
           "measurement": "item",
           "quantity": 1
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
-          "name": "jarmuż",
+          "name": "jarmuz",
           "measurement": "glass",
           "quantity": 1
         }
@@ -109,14 +109,14 @@
           "quantity": 1
         }
       ],
-      "ProteinFruit": [
+      "Protein_Fruit": [
         {
           "name": "awokado",
           "measurement": "item",
           "quantity": 0.5
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "jarmuż",
           "measurement": "glass",

@@ -2,7 +2,7 @@ import json
 import copy
 from django.core.management.base import BaseCommand, CommandError
 from recipes.models import Recipe, RecipeIngredient
-from ingredients.models import Protein, Ingredients, Vegetable, Fruit, Meat
+from ingredients.models import Ingredients
 from ingredients.exceptions import UnknownIngredient
 
 
@@ -25,34 +25,42 @@ class Command(BaseCommand):
 def receipt_serializer(receipts):
     receipts = copy.deepcopy(receipts)
     for receipt in receipts:
-        receipt_ingredients = receipt.pop("ingredients")
+        receipt_ingredients = receipt.pop("ingredients", {})
         created_receipt, is_new = Recipe.objects.get_or_create(
             **receipt,
             defaults={"name": receipt["name"]}
         )
         ingredients_classes = extract_ingredients(receipt_ingredients)
         for ingredient, details in ingredients_classes:
+            print(details)
             RecipeIngredient.objects.get_or_create(**details, receipt=created_receipt, component=ingredient)
 
 
 def extract_ingredients(receipt_ingredients):
-    ingredients_classes = []
-    for i in Ingredients.__subclasses__():
-        ingredients_classes.append(i)
-    for i in Protein.__subclasses__():
-        ingredients_classes.append(i)
-    for i in Vegetable.__subclasses__():
-        ingredients_classes.append(i)
-    for i in Meat.__subclasses__():
-        ingredients_classes.append(i)
-    classes = {}
-    for i in ingredients_classes:
-        classes.update({i.__name__: i})
-    for ingredients_type, ingredients in receipt_ingredients.items():
-        try:
-            ingredient_class = classes[ingredients_type]
-        except KeyError:
-            raise UnknownIngredient(ingredients_type)
+    """
+    {'Spices': [{'name': 'cynamon', 'measurement': 'small spoon', 'quantity': 1},
+    {'name': 'skórka z pomaranczy', 'measurement': 'small spoon', 'quantity': 0.5}],
+    'Fruit': [{'name': 'dojrzały banan', 'measurement': 'items', 'quantity': 1}],
+    'Liquid': [{'name': 'mleko koko', 'measurement': 'glass', 'quantity': 1.5}],
+    'Starch': [{'name': 'batat', 'measurement': 'glass', 'quantity': 1}]}
+
+    """
+    print(receipt_ingredients)
+    for ingredient_type, ingredients in receipt_ingredients.items():
+        subtypes_names, _ = zip(*Ingredients.SUBTYPES)
+        types_names, _ = zip(*Ingredients.TYPES)
+
         for ingredient in ingredients:
-            created, is_created = ingredient_class.objects.get_or_create(name=ingredient["name"])
+            ingredient_types = []
+            ingredient_type = ingredient_type.lower()
+            if ingredient_type in subtypes_names:
+                ingredient_types.append(ingredient_type)
+                if (type_ := Ingredients.RELATIONS.get(ingredient_type)):
+                    print(type_)
+                    ingredient_types.insert(0, type_)
+            elif ingredient_type in types_names:
+                ingredient_types.append(ingredient_type)
+            print(ingredient_types)
+            print(ingredient["name"])
+            created, is_created = Ingredients.objects.get_or_create(name=ingredient["name"], types=ingredient_types)
             yield created, dict(measurement=ingredient["measurement"], quantity=ingredient["quantity"])

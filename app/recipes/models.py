@@ -1,5 +1,5 @@
 from django.db import models
-from ingredients.models import Ingredients, Starch, Vegetable, Meat, Spices
+from ingredients.models import Ingredients
 
 
 class Recipe(models.Model):
@@ -42,8 +42,8 @@ class Recipe(models.Model):
             print(type(i.component))
             print(type(i.component.cast()))
             print(type(i))
-            if issubclass(i.__class__, Starch):
-                return {"starch": i}
+            # if issubclass(i.__class__, Starch):
+            #     return {"starch": i}
 
 
 class RecipeIngredient(models.Model):

@@ -25,17 +25,22 @@ class DayPlan(models.Model):
         return shop_list_by_meals
 
     def get_shop_list_divided_by_ingredients(self):
-        shop_list_by_meals = defaultdict(list)
-        for meal_name, meal in [("breakfast", self.breakfast), ('lunch', self.lunch), ("dinner", self.dinner)]:
-            ingredients = []
-            for receipt_component in meal.recipeingredient_set.all():
-                ingredient_details = {
-                    "name": receipt_component.component.name,
-                    "measurement": receipt_component.measurement,
-                    "quantity": receipt_component.quantity}
-                ingredients.append(ingredient_details)
-            shop_list_by_meals.update({meal_name: ingredients})
-        return shop_list_by_meals
+        shop_list_by_ingredient = defaultdict(list)
+        day_ingredients = self.get_all_ingredients_details()
+        from itertools import groupby
+        for k, v in groupby(sorted(day_ingredients,
+                                   key=lambda x: x['name']), key=lambda x: x['name']):
+            for measurement, ingr in groupby(sorted(v, key=lambda x: x['measurement']),
+                                             key=lambda x: x['measurement']):
+                quantity_with_type = [(item['quantity'], item["type"]) for item in ingr]
+                quantity = sum(x[0] for x in quantity_with_type)
+                previous = shop_list_by_ingredient[quantity_with_type[0][1]]
+                type_ingredient = [{"name": k, "measurement": measurement, "quantity": quantity}]
+                if previous:
+                    type_ingredient.extend(previous)
+                shop_list_by_ingredient[quantity_with_type[0][1]] = type_ingredient
+
+        return shop_list_by_ingredient
 
     def get_shop_list(self):
         shop_list = []
@@ -72,7 +77,8 @@ class DayPlan(models.Model):
                 yield {
                     "name": receipt_component.component.name,
                     "measurement": receipt_component.measurement,
-                    "quantity": receipt_component.quantity}
+                    "quantity": receipt_component.quantity,
+                    "type": receipt_component.component.types[0]}
 
     def __str__(self):
         return f"{self.name}: {self.breakfast.name} AND {self.lunch.name} AND {self.dinner.name}"

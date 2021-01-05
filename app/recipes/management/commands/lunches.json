@@ -346,7 +346,7 @@
           "quantity": 1
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "ogórek",
           "measurement": "items",
@@ -420,7 +420,7 @@
           "quantity": 1
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "cukinia",
           "measurement": "glass",
@@ -546,7 +546,7 @@
           "quantity": 1
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "szpinak",
           "measurement": "glass",
@@ -583,7 +583,7 @@
     "type": "lunch",
     "diet_name": "aip",
     "ingredients": {
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "jarmuż",
           "measurement": "glass",
@@ -657,7 +657,7 @@
           "quantity": 1
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "szpinak",
           "measurement": "glass",
@@ -718,7 +718,7 @@
           "quantity": 10
         }
       ],
-      "GreenVegetable": [
+      "Green_Vegetable": [
         {
           "name": "szpinak",
           "measurement": "glass",
