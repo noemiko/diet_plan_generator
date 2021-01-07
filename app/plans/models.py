@@ -1,7 +1,10 @@
+from itertools import groupby
+
 from django.db import models
 from recipes.models import Recipe
 from collections import defaultdict
 from typing import List, Dict
+from operator import itemgetter
 
 
 class DayPlan(models.Model):
@@ -24,61 +27,36 @@ class DayPlan(models.Model):
             shop_list_by_meals.update({meal_name: ingredients})
         return shop_list_by_meals
 
-    def get_shop_list_divided_by_ingredients(self):
-        shop_list_by_ingredient = defaultdict(list)
+    def get_shop_list_divided_by_types(self):
+        shop_list = defaultdict(list)
         day_ingredients = self.get_all_ingredients_details()
-        from itertools import groupby
-        for k, v in groupby(sorted(day_ingredients,
-                                   key=lambda x: x['name']), key=lambda x: x['name']):
-            for measurement, ingr in groupby(sorted(v, key=lambda x: x['measurement']),
-                                             key=lambda x: x['measurement']):
-                quantity_with_type = [(item['quantity'], item["type"]) for item in ingr]
-                quantity = sum(x[0] for x in quantity_with_type)
-                previous = shop_list_by_ingredient[quantity_with_type[0][1]]
-                type_ingredient = [{"name": k, "measurement": measurement, "quantity": quantity}]
-                if previous:
-                    type_ingredient.extend(previous)
-                shop_list_by_ingredient[quantity_with_type[0][1]] = type_ingredient
+        sorted_by_type = sorted(day_ingredients, key=itemgetter('type'))
+        for type_, ingredients in groupby(sorted_by_type, key=itemgetter('type')):
+            for name, ingredients_ in groupby(sorted(ingredients, key=itemgetter('name')), key=itemgetter('name')):
+                for measurement, ingredients__ in self.group_by_measurement(ingredients_):
+                    quantity = sum(x["quantity"] for x in ingredients__)
+                    new_type_ingredients = [{'name': name, 'measurement': measurement, 'quantity': quantity}]
+                    if previous_ingredients := shop_list[type_]:
+                        new_type_ingredients.extend(previous_ingredients)
+                    shop_list.update({type_: new_type_ingredients})
+        return shop_list
 
-        return shop_list_by_ingredient
-
-    def get_shop_list(self):
-        shop_list = []
-        for ingredient in self.get_all_ingredients_details():
-            if self.if_ingredient_with_measurement_exist(ingredient, shop_list):
-                new_shop_list = self.get_updated_shop_list(ingredient, shop_list)
-                ## currently I have no idea how do it better
-                shop_list = new_shop_list
-            else:
-                shop_list.append(ingredient)
-        sorted_shop_list = sorted(shop_list, key=lambda k: k['name'])
-        return sorted_shop_list
-
-    def get_updated_shop_list(self, checked, shop_list: List[Dict]):
-        new_shop_list = []
-        for i in shop_list:
-            if i["name"] == checked["name"] and i["measurement"] == checked["measurement"]:
-                new_quantity = checked["quantity"] + i["quantity"]
-                new_shop_list.append(
-                    {"name": i["name"], "measurement": i["measurement"], "quantity": new_quantity})
-            else:
-                new_shop_list.append(i)
-        return new_shop_list
-
-    def if_ingredient_with_measurement_exist(self, checked, shop_list: List[Dict]):
-        for i in shop_list:
-            if i["name"] == checked["name"] and i["measurement"] == checked["measurement"]:
-                return True
-        return False
+    def group_by_measurement(self, ingredients):
+        sorted_by_measurement = sorted(ingredients, key=itemgetter('measurement'))
+        return groupby(sorted_by_measurement, key=itemgetter('measurement'))
 
     def get_all_ingredients_details(self):
         for meal in (self.breakfast, self.lunch, self.dinner):
             for receipt_component in meal.recipeingredient_set.all():
+                if not receipt_component.component.types:
+                    type_ = "unknown"
+                else:
+                    type_ = receipt_component.component.types[0]
                 yield {
                     "name": receipt_component.component.name,
                     "measurement": receipt_component.measurement,
                     "quantity": receipt_component.quantity,
-                    "type": receipt_component.component.types[0]}
+                    "type": type_}
 
     def __str__(self):
         return f"{self.name}: {self.breakfast.name} AND {self.lunch.name} AND {self.dinner.name}"
@@ -125,7 +103,7 @@ class WeeklyPlan(models.Model):
             if field.name in ["id", "diet_name"]:
                 continue
             day_receipts = self.__getattribute__(field.name)
-            all_ingredients.extend(day_receipts.get_shop_list())
+            all_ingredients.extend(day_receipts.get_all_ingredients_details())
         return all_ingredients
 
     def _get_updated_shop_list(self, checked, shop_list: List[Dict]):
@@ -138,6 +116,24 @@ class WeeklyPlan(models.Model):
             else:
                 new_shop_list.append(i)
         return new_shop_list
+
+    def get_shop_list_divided_by_types(self):
+        shop_list = defaultdict(list)
+        day_ingredients = self.get_all_ingredients()
+        sorted_by_type = sorted(day_ingredients, key=itemgetter('type'))
+        for type_, ingredients in groupby(sorted_by_type, key=itemgetter('type')):
+            for name, ingredients_ in groupby(sorted(ingredients, key=itemgetter('name')), key=itemgetter('name')):
+                for measurement, ingredients__ in self.group_by_measurement(ingredients_):
+                    quantity = sum(x["quantity"] for x in ingredients__)
+                    new_type_ingredients = [{'name': name, 'measurement': measurement, 'quantity': quantity}]
+                    if previous_ingredients := shop_list[type_]:
+                        new_type_ingredients.extend(previous_ingredients)
+                    shop_list.update({type_: new_type_ingredients})
+        return shop_list
+
+    def group_by_measurement(self, ingredients):
+        sorted_by_measurement = sorted(ingredients, key=itemgetter('measurement'))
+        return groupby(sorted_by_measurement, key=itemgetter('measurement'))
 
     def _if_ingredient_with_measurement_exist(self, checked, shop_list: List[Dict]):
         for i in shop_list:

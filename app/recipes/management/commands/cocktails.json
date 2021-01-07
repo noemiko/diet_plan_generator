@@ -1,4 +1,9 @@
-[
+[{
+    "name": "Empty recipe",
+    "description": "",
+    "type": "addition",
+    "diet_name": "aip",
+    "ingredients": {}},
   {
     "name": "Koktajl z batatów i bananów na mleku roślinnym",
     "description": "Upiecz batata i pokrój w dużą kostkę. Wszystkie składniki włożyć do blendera\nkielichowego i zmiksować na gładki koktajl.\nJeśli lubisz bardziej rzadkie koktajle dodaj\nwięcej mleka.",
@@ -70,7 +75,7 @@
           "quantity": 1.5
         }
       ],
-      "Protein_ńFruit": [
+      "Protein_Fruit": [
         {
           "name": "awokado",
           "measurement": "item",

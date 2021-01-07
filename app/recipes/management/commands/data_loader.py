@@ -32,7 +32,6 @@ def receipt_serializer(receipts):
         )
         ingredients_classes = extract_ingredients(receipt_ingredients)
         for ingredient, details in ingredients_classes:
-            print(details)
             RecipeIngredient.objects.get_or_create(**details, receipt=created_receipt, component=ingredient)
 
 
@@ -45,7 +44,6 @@ def extract_ingredients(receipt_ingredients):
     'Starch': [{'name': 'batat', 'measurement': 'glass', 'quantity': 1}]}
 
     """
-    print(receipt_ingredients)
     for ingredient_type, ingredients in receipt_ingredients.items():
         subtypes_names, _ = zip(*Ingredients.SUBTYPES)
         types_names, _ = zip(*Ingredients.TYPES)
@@ -55,12 +53,11 @@ def extract_ingredients(receipt_ingredients):
             ingredient_type = ingredient_type.lower()
             if ingredient_type in subtypes_names:
                 ingredient_types.append(ingredient_type)
-                if (type_ := Ingredients.RELATIONS.get(ingredient_type)):
-                    print(type_)
+                if type_ := Ingredients.RELATIONS.get(ingredient_type):
                     ingredient_types.insert(0, type_)
             elif ingredient_type in types_names:
                 ingredient_types.append(ingredient_type)
-            print(ingredient_types)
-            print(ingredient["name"])
+            else:
+                raise UnknownIngredient(ingredient_type)
             created, is_created = Ingredients.objects.get_or_create(name=ingredient["name"], types=ingredient_types)
             yield created, dict(measurement=ingredient["measurement"], quantity=ingredient["quantity"])
