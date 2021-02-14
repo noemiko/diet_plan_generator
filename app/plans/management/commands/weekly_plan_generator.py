@@ -36,4 +36,4 @@ class Command(BaseCommand):
             sunday=daily_plans[6]
         )
 
-        print("Generate plan")
+        print("Plan generated")

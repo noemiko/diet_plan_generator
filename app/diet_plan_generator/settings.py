@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'plans.apps.PlansConfig',
     'recipes.apps.RecipesConfig',
     'users.apps.UsersConfig',
+    'webshell'
 ]
 
 MIDDLEWARE = [
