@@ -11,7 +11,7 @@ jobs:
     - name: Login to Heroku
       env: 
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-      run: heroku login
+      run: heroku login -i
     - name: Login to Heroku Container registry
       env: 
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
