@@ -8,18 +8,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Login to Heroku
-      env: 
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-      run: heroku login -i
-    - name: Login to Heroku Container registry
-      env: 
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-      run: heroku container:login
-    - name: Build and push
+    - name: "Create .netrc for Heroku Auth"
+      shell: bash
+      run: |
+          `cat >~/.netrc <<EOF
+          machine api.heroku.com
+              login $EMAIL
+              password $HEROKU_AUTH_TOKEN
+          machine git.heroku.com
+              login $EMAIL
+              password $HEROKU_AUTH_TOKEN
+          EOF`
       env:
+          EMAIL: noemikow8@gmail.com
+          HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_AUTH_TOKEN }}
+    - name: "Add remote"
+      shell: "bash"
+      run: |
+          heroku git:remote --app vast-bastion-73673
+    - name: "Push to heroku"
+      shell: "bash"
+      run: |
+          git push heroku HEAD:master
+      env: 
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-      run: heroku container:push -a vast-bastion-73673 web 
     - name: Release
       env:
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
