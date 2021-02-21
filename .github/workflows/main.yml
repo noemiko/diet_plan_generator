@@ -25,7 +25,7 @@ jobs:
     - name: "Push to heroku"
       shell: "bash"
       run: |
-          heroku plugins:install @heroku-cli/plugin-manifest
+          heroku auth:token
       env: 
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
     - name: Release
