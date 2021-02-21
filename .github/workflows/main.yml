@@ -1,34 +1,18 @@
 name: Deploy
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: "Create .netrc for Heroku Auth"
-      shell: bash
-      run: |
-          `cat >~/.netrc <<EOF
-          machine api.heroku.com
-              login $EMAIL
-              password $HEROKU_API_KEY
-          machine git.heroku.com
-              login $EMAIL
-              password $HEROKU_API_KEY
-          EOF`
-      env:
-          EMAIL: noemikow8@gmail.com
-          HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-    - name: "Push to heroku"
-      shell: "bash"
-      run: |
-          heroku auth:token
-      env: 
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-    - name: Release
-      env:
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-      run: heroku container:release -a vast-bastion-73673 web 
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "fooo" #Must be unique in Heroku
+          heroku_email: "noemikow8@gmail.com"
+          usedocker: true
