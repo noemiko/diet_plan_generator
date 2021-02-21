@@ -22,14 +22,10 @@ jobs:
       env:
           EMAIL: noemikow8@gmail.com
           HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_AUTH_TOKEN }}
-    - name: "Add remote"
-      shell: "bash"
-      run: |
-          heroku git:remote -a vast-bastion-73673
     - name: "Push to heroku"
       shell: "bash"
       run: |
-          git push heroku HEAD:main
+          git push heroku main
       env: 
         HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
     - name: Release
