@@ -21,7 +21,7 @@ jobs:
           EOF`
       env:
           EMAIL: noemikow8@gmail.com
-          HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_AUTH_TOKEN }}
+          HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_API_KEY }}
     - name: "Push to heroku"
       shell: "bash"
       run: |
