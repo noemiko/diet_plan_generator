@@ -23,7 +23,7 @@ jobs:
           EMAIL: noemikow8@gmail.com
           HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_AUTH_TOKEN }}
     - name: "log in"
-      run: heroku container:login -i
+      run: heroku container:login
       env:
           EMAIL: noemikow8@gmail.com
           HEROKU_AUTH_TOKEN: ${{ secrets.HEROKU_AUTH_TOKEN }}
