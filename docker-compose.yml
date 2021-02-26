@@ -19,7 +19,7 @@ services:
     environment:
       - POSTGRES_USER=hello_django
       - POSTGRES_PASSWORD=hello_django
-      - POSTGRES_DB=hello_django_dev
+      - POSTGRES_DB=hello_django
 
 volumes:
   postgres_data:

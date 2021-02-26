@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "diet_plan_generator"
+version = "0.1.0"
+description = ""
+authors = ["Noemi <noemikow8@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9.2"
+Django = "3.1.1"
+gunicorn = "20.0.4"
+psycopg2-binary = "2.8.6"
+whitenoise = "5.2.0"
+dj-database-url = "0.5.0"
+django-webshell = "0.3.0"
+six="1.15.0"
+
+[tool.poetry.dev-dependencies]
+pytest-django = "3.9.0"
+pytest = "^6.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
