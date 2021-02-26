@@ -6,7 +6,6 @@ from ingredients.exceptions import UnknownIngredient
 
 pytestmark = pytest.mark.django_db
 
-
 @pytest.mark.django_db
 def test_creating_receipt():
     receipt_name = "Moj wlasny przepis"
@@ -26,7 +25,6 @@ def test_creating_receipt():
     }]
     receipt_serializer(raw_receipt)
     assert Recipe.objects.get(name=receipt_name)
-
 
 @pytest.mark.django_db
 def test_creating_receipt_only_once():

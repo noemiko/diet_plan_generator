@@ -28,44 +28,4 @@ FROM main AS testing
 
 RUN poetry install
 
-RUN poetry run pytest
-
-# add and run as non-root user
-#RUN adduser -D myuser
-#USER myuser
-
-# copy entrypoint.sh
-#COPY entrypoint.sh .
-#
-## copy project
-
-#
-## run entrypoint.sh
-#ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
-#RUN pip install -r requirements.txt
-#COPY . .
-## collect static files
-#RUN python manage.py collectstatic --noinput
-# add and run as non-root user
-#RUN adduser -D myuser
-#USER myuser
-
-# copy entrypoint.sh
-#COPY entrypoint.sh .
-#
-## copy project
-
-#
-## run entrypoint.sh
-#RUN apt-get update && apt-get -y dist-upgrade
-#RUN apt-get -y install build-essential libssl-dev libffi-dev libblas3 libc6 liblapack3 gcc python3-dev python3-pip cython3
-#RUN apt-get -y install python3-numpy python3-scipy
-#RUN apt install -y netcat
-##RUN /usr/src/app/entrypoint.sh
-#FROM main AS testing
-#
-#RUN apt-get install build-dep python-psycopg2
-#
-#RUN poetry install
-#
-#RUN poetry run pytest
+RUN poetry run pytest -k 'not django_db'

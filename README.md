@@ -9,3 +9,5 @@ Available scripts
 docker-compose run --rm web python manage.py weekly_plan_generator
  docker-compose run --rm web python manage.py data_loader -f /usr/src/app/recipes/management/commands/cocktails.json
 ```
+
+diet_plan_generator git:(poetry) ✗ docker-compose run --rm web poetry run pytest

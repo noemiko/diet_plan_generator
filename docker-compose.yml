@@ -3,7 +3,7 @@ version: '3.3'
 services:
   web:
     build: app
-    command: gunicorn diet_plan_generator.wsgi:application --bind 0.0.0.0:$PORT
+    command: gunicorn diet_plan_generator.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
     ports:
